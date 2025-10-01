@@ -32,7 +32,7 @@ You already have the **UI design** (HTML + TailwindCSS). Your task is to:
 - **Free Todo API** (Choose any one):  
   - [JSONPlaceholder](https://jsonplaceholder.typicode.com/todos)  
   - [DummyJSON](https://dummyjson.com/todos)  
-  - [FreeApi]([https://dummyjson.com/todos](https://freeapi.hashnode.space/api-guide/apireference/getUsers)) 
+  - [FreeApi](https://freeapi.hashnode.space/api-guide/apireference/getUsers)
 ---
 
 ## 📂 Project Structure  
