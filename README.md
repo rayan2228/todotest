@@ -1,4 +1,4 @@
-# 📝 Todo App – Frontend Intern Assignment  
+# 📝 Todo App – Frontend Developer Assignment  
 
 ## 🎯 Task Overview  
 As part of your exam, you are required to build a **Todo App** using **React** and connect it with a **Free REST API** (e.g., [JSONPlaceholder](https://jsonplaceholder.typicode.com/todos)).  
