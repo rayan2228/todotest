@@ -33,5 +33,5 @@ You already have the **UI design** (HTML + TailwindCSS). Your task is to:
   - [FreeApi](https://freeapi.hashnode.space/api-guide/apireference/getUsers)
 ---
 
-## 📂 Project Structure  
+
 
