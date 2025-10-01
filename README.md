@@ -1,7 +1,7 @@
 # 📝 Todo App – Frontend Developer Assignment  
 
 ## 🎯 Task Overview  
-As part of your exam, you are required to build a **Todo App** using **React** and connect it with a **Free REST API** (e.g., [JSONPlaceholder](https://jsonplaceholder.typicode.com/todos)).  
+As part of your exam, you are required to build a **Todo App** using **React** and connect it with a **Free REST API** .  
 
 You already have the **UI design** (HTML + TailwindCSS). Your task is to:  
 1. Convert the design into **React components**.  
@@ -29,9 +29,7 @@ You already have the **UI design** (HTML + TailwindCSS). Your task is to:
 ### Tech Stack  
 - **React (Latest version)**  
 - **Tailwind CSS**  
-- **Free Todo API** (Choose any one):  
-  - [JSONPlaceholder](https://jsonplaceholder.com)  
-  - [DummyJSON](https://dummyjson.com/)  
+- **Free Todo API**:  
   - [FreeApi](https://freeapi.hashnode.space/api-guide/apireference/getUsers)
 ---
 
