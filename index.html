@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-br from-purple-100 to-blue-100 min-h-screen py-8 px-4"
+  >
+    <div class="max-w-3xl mx-auto">
+      <!-- Header -->
+      <div class="text-center mb-8">
+        <h1 class="text-5xl font-bold text-gray-800 mb-2">My Todo List</h1>
+        <p class="text-gray-600">Organize your tasks efficiently</p>
+      </div>
+
+      <!-- Add Todo Form -->
+      <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Add New Task</h2>
+        <div class="space-y-4">
+          <input
+            type="text"
+            placeholder="Task title..."
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+          />
+          <textarea
+            placeholder="Task description (optional)..."
+            rows="3"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent resize-none"
+          ></textarea>
+          <button
+            class="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-200"
+          >
+            Add Task
+          </button>
+        </div>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="bg-white rounded-lg shadow-lg p-4 mb-6">
+        <div class="flex gap-2 flex-wrap">
+          <button
+            class="flex-1 min-w-[100px] bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg"
+          >
+            All
+          </button>
+          <button
+            class="flex-1 min-w-[100px] bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg hover:bg-gray-300 transition duration-200"
+          >
+            Active
+          </button>
+          <button
+            class="flex-1 min-w-[100px] bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg hover:bg-gray-300 transition duration-200"
+          >
+            Completed
+          </button>
+        </div>
+      </div>
+
+      <!-- Todo List -->
+      <div class="space-y-4">
+        <!-- Todo Item 1 - Active -->
+        <div
+          class="bg-white rounded-lg shadow-lg p-5 hover:shadow-xl transition duration-200"
+        >
+          <div class="flex items-start gap-4">
+            <div class="flex items-center h-6 mt-1">
+              <input
+                type="checkbox"
+                class="w-5 h-5 text-purple-600 border-gray-300 rounded focus:ring-purple-500 cursor-pointer"
+              />
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3 class="text-lg font-semibold text-gray-800 mb-1">
+                Complete project documentation
+              </h3>
+              <p class="text-gray-600 text-sm mb-2">
+                Write comprehensive documentation for the new feature including
+                API references and examples
+              </p>
+              <span class="text-xs text-gray-400"
+                >Added: Oct 1, 2025 10:30 AM</span
+              >
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition duration-200"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                  ></path>
+                </svg>
+              </button>
+              <button
+                class="p-2 text-red-600 hover:bg-red-50 rounded-lg transition duration-200"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Todo Item 2 - Completed -->
+        <div
+          class="bg-white rounded-lg shadow-lg p-5 hover:shadow-xl transition duration-200"
+        >
+          <div class="flex items-start gap-4">
+            <div class="flex items-center h-6 mt-1">
+              <input
+                type="checkbox"
+                checked
+                class="w-5 h-5 text-purple-600 border-gray-300 rounded focus:ring-purple-500 cursor-pointer"
+              />
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3 class="text-lg font-semibold text-gray-400 line-through mb-1">
+                Review pull requests
+              </h3>
+              <p class="text-gray-400 text-sm mb-2 line-through">
+                Check and approve pending pull requests from team members
+              </p>
+              <span class="text-xs text-gray-400"
+                >Added: Oct 1, 2025 9:15 AM</span
+              >
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition duration-200"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                  ></path>
+                </svg>
+              </button>
+              <button
+                class="p-2 text-red-600 hover:bg-red-50 rounded-lg transition duration-200"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Todo Item 3 - Active -->
+        <div
+          class="bg-white rounded-lg shadow-lg p-5 hover:shadow-xl transition duration-200"
+        >
+          <div class="flex items-start gap-4">
+            <div class="flex items-center h-6 mt-1">
+              <input
+                type="checkbox"
+                class="w-5 h-5 text-purple-600 border-gray-300 rounded focus:ring-purple-500 cursor-pointer"
+              />
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3 class="text-lg font-semibold text-gray-800 mb-1">
+                Update database schema
+              </h3>
+              <p class="text-gray-600 text-sm mb-2">
+                Add new tables and relationships for user authentication system
+              </p>
+              <span class="text-xs text-gray-400"
+                >Added: Oct 1, 2025 8:00 AM</span
+              >
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition duration-200"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                  ></path>
+                </svg>
+              </button>
+              <button
+                class="p-2 text-red-600 hover:bg-red-50 rounded-lg transition duration-200"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Todo Item 4 - Active (No Description) -->
+        <div
+          class="bg-white rounded-lg shadow-lg p-5 hover:shadow-xl transition duration-200"
+        >
+          <div class="flex items-start gap-4">
+            <div class="flex items-center h-6 mt-1">
+              <input
+                type="checkbox"
+                class="w-5 h-5 text-purple-600 border-gray-300 rounded focus:ring-purple-500 cursor-pointer"
+              />
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3 class="text-lg font-semibold text-gray-800 mb-1">
+                Team meeting at 3 PM
+              </h3>
+              <span class="text-xs text-gray-400"
+                >Added: Oct 1, 2025 7:30 AM</span
+              >
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition duration-200"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                  ></path>
+                </svg>
+              </button>
+              <button
+                class="p-2 text-red-600 hover:bg-red-50 rounded-lg transition duration-200"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
