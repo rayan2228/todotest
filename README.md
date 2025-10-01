@@ -30,8 +30,8 @@ You already have the **UI design** (HTML + TailwindCSS). Your task is to:
 - **React (Latest version)**  
 - **Tailwind CSS**  
 - **Free Todo API** (Choose any one):  
-  - [JSONPlaceholder](https://jsonplaceholder.typicode.com/todos)  
-  - [DummyJSON](https://dummyjson.com/todos)  
+  - [JSONPlaceholder](https://jsonplaceholder.com)  
+  - [DummyJSON](https://dummyjson.com/)  
   - [FreeApi](https://freeapi.hashnode.space/api-guide/apireference/getUsers)
 ---
 
